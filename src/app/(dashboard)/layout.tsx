@@ -1,13 +1,13 @@
-//import Navbar from '@/components/NavBar'
-//import Sidebar from '@/components/SideBar'
+import Navbar from '@/components/NavBar'
+import Sidebar from '@/components/SideBar'
 
 const DashboardLayout = ({ children }) => {
     return (
         <div>
             <div className="flex ">
-                {/* <Sidebar /> */}
+                <Sidebar />
                 <main className="flex-grow ml-64 relative ">
-                    {/* <Navbar /> */}
+                    <Navbar />
                     <div>
                         <div>{children}</div>
                     </div>

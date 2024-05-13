@@ -1,7 +1,12 @@
 import { Button } from '@/components/ui/button'
+import { auth } from '@clerk/nextjs/server'
+
 import Link from 'next/link'
 
-export default function Home() {
+export default async function Home() {
+    const { userId } = await auth()
+    let href = userId ? '/analytics' : '/new-user'
+
     return (
         <div className="w-screen h-screen flex justify-center items-center">
             <div>
@@ -11,9 +16,11 @@ export default function Home() {
                     A Virtual Reality Simulator
                 </blockquote>
                 <div>
-                    <Button variant="outline" size="lg">
-                        get started
-                    </Button>
+                    <Link href="/analytics">
+                        <Button variant="outline" size="lg">
+                            get started
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>
