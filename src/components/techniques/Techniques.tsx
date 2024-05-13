@@ -1,4 +1,4 @@
-import { Input } from '@/components/ui/input'
+//import { Input } from '@/components/ui/input'
 
 import {
     Card,
@@ -67,13 +67,13 @@ const Techiniques = async () => {
                     />
                 </div>
             </section> */}
-            <div className="px-4 ">
+            {/* <div className="px-4 ">
                 <Input
                     type="text"
                     className="px-4 py-2 rounded-md"
                     placeholder="Search..."
                 />
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -42,7 +42,7 @@ const Cut2ProficiencyChart = () => {
             Proficiency: 83,
         },
         {
-            Date: 'May 6st',
+            Date: 'May 6th',
             Proficiency: 97,
         },
     ]
@@ -116,7 +116,7 @@ const Cut2ProficiencyChart = () => {
                             />
                         </linearGradient>
                     </defs>
-                    <XAxis dataKey="year" />
+                    <XAxis dataKey="Date" />
                     <YAxis />
                     <Tooltip />
                     <Area
